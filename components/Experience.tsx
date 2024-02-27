@@ -14,37 +14,45 @@ const Experience: React.FC<{}> = () => {
           <p className="text-gray-300 ">
             <span className="font-semibold">WebHR /</span> Software Engineer
           </p>
-          <p className="text-gray-300">MAY 2022 - PRESENT, HYDERABAD</p>
+          <p className="text-gray-300">MAY 2021 - PRESENT</p>
         </div>
         <p className="text-gray-300 pt-5">
-          Currently, I am working on WebHR Mobile Application, WebHR is a Cloud
-          based Social HR Software for SMEs by Verge Systems Inc. WebHR is
-          currently used in over 160 countries world wide by thousands of
-          organizations to manage HR, As a React.js developer with 1.5 year of
-          experience, I have a strong foundation in creating dynamic and
-          responsive mobile and web applications.
+          NWSolutions, established in 2021, is at the forefront of bridging
+          technology gaps across various industries. Our mission is to empower
+          organizations worldwide with innovative tech solutions. As a seasoned
+          developer with over 3.5 years of experience, I specialize in crafting
+          dynamic and responsive web and mobile applications and technologies,
+          tailoring each project to meet the unique needs of our clients. Our
+          dedication to excellence and innovation is the cornerstone of our
+          success, making technology accessible where it's most needed.
           <br />
           <br />
-          My experience with React Native has allowed me to develop
-          cross-platform mobile applications that run seamlessly on both iOS and
-          Android platforms. Additionally, my proficiency in React.js has
-          equipped me with the skills to create fast, scalable, and dynamic web
-          pages with excellent user experiences. I have a deep understanding of
+          My experience with Web Development has allowed me to develop
+          cross-platform mobile applications that run seamlessly on iOS, Android
+          and Windows. Additionally, my proficiency in React.js has equipped me
+          with the skills to create fast, scalable, and dynamic web pages with
+          excellent user experiences. I have a deep understanding of
           component-based architecture and state management, and I am
           well-versed in the latest web development trends and technologies.
         </p>
         <div className="flex-col flex sm:flex-row ">
           <div className="bg-transparent  mt-5 mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React Native
+            Next.JS
           </div>
           <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React
+            React.JS
           </div>
           <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
             JavaScript
           </div>
           <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
             Typescript
+          </div>
+          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
+            Node
+          </div>
+          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
+            Astro
           </div>
         </div>
       </div>
