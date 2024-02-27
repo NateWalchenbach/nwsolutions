@@ -134,11 +134,12 @@ const Banner: React.FC<{}> = () => {
           </span>
         </p>
         <p className="text-md text-gray-200 my-5 max-w-[600px]">
-          As a fervent Software Developer specializing in Web Applications, I am
-          committed to propelling industries forward by leveraging innovative
-          technologies and development strategies. My passion lies in harnessing
-          the power of web technologies to create transformative solutions that
-          elevate industry standards and drive progress.
+          As a fervent Software Developer specializing in Web Applications and
+          connecting new technologies, I am committed to propelling industries
+          forward by leveraging innovative technologies and development
+          strategies. My passion lies in harnessing the power of web
+          technologies to create transformative solutions that elevate industry
+          standards and drive progress.
         </p>
         <div className="text-md flex justify-center">
           <button

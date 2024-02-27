@@ -6,8 +6,10 @@ const useRotatingText = (texts = [], interval = 3000) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentText((current) => {
-        const currentIndex = texts.indexOf(current);
-        const nextIndex = (currentIndex + 1) % texts.length;
+        let nextIndex;
+        do {
+          nextIndex = Math.floor(Math.random() * texts.length);
+        } while (texts[nextIndex] === current && texts.length > 1); // Ensure it's a new word if there's more than one option
         return texts[nextIndex];
       });
     }, interval);

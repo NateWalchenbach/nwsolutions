@@ -12,19 +12,18 @@ const Experience: React.FC<{}> = () => {
       <div className=" container mx-auto 2xl ">
         <div className="flex  flex-row justify-between pt-5">
           <p className="text-gray-300 ">
-            <span className="font-semibold">WebHR /</span> Software Engineer
+            <span className="font-semibold">NWSolutions /</span> Founder
           </p>
           <p className="text-gray-300">MAY 2021 - PRESENT</p>
         </div>
         <p className="text-gray-300 pt-5">
-          NWSolutions, established in 2021, is at the forefront of bridging
-          technology gaps across various industries. Our mission is to empower
-          organizations worldwide with innovative tech solutions. As a seasoned
-          developer with over 3.5 years of experience, I specialize in crafting
-          dynamic and responsive web and mobile applications and technologies,
-          tailoring each project to meet the unique needs of our clients. Our
-          dedication to excellence and innovation is the cornerstone of our
-          success, making technology accessible where it's most needed.
+          My mission is to empower organizations worldwide with innovative tech
+          solutions. As a seasoned software developer with over 3.5 years of
+          experience, I specialize in crafting dynamic and responsive web and
+          mobile applications and technologies, tailoring each project to meet
+          the unique needs of our clients. My dedication to excellence and
+          innovation is the cornerstone of success, making technology accessible
+          where it's most needed.
           <br />
           <br />
           My experience with Web Development has allowed me to develop
