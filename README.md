@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Personal Developer Portfolio 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Site preview](/public/site-preview.png)](https://developer-portfolio-ibrahim-memons-projects.vercel.app/)
 
-## Available Scripts
+Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). it not only provides a visually appealing representation of my work but also ensures optimal performance. View the [live site](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/).
 
-In the project directory, you can run:
+# Features 🎉
 
-### `npm start`
+The whole [portfolio](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/) is a React-based single page app built with Next.js in Typescript, using only statically generated pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Fonts ✍🏻
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### `npm test`
+# Project images 🖼️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All project images live under `public/images` and are automatically attached to each project based on the inclusion of the project's `slug` in their filenames
 
-### `npm run build`
+# ✨ Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone git@github.com:ibrahimmemonn/Developer-Portfolio.git
+cd Developer-Portfolio/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# GITHUB_TOKEN is required for some parts
+# See https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm i
+npm run dev
+```
 
-### `npm run eject`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 🚚 Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com/) with their GitHub integration, where the `main` branch is automatically aliased to [ibrahimmemon.com](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/). A link to a preview deployment will appear under each Pull Request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 🏛 Licenses
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+© Copyright 2023 Ibrahim Memon
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Don't care if you fork & play with it, but you're not allowed to publish anything from it as a whole without my written permission. Also please be aware, the combination of typography, colors & layout makes up my brand identity. So please don't just clone everything, but rather do a remix!
