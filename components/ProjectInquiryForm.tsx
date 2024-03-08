@@ -56,8 +56,8 @@ function ProjectInquiryForm() {
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="space-y-4 max-w-4xl mx-auto p-5"
-      style={{ zIndex: 2 }}
+      className="mx-auto p-5 my-5 md:max-w-4xl"
+      style={{ maxWidth: "80%", zIndex: 2 }} // This sets the maximum width to 80% of the parent, effectively creating a 10% margin on each side
     >
       <h2 className="text-white font-semibold text-3xl text-center pt-5">
         Project Submittal

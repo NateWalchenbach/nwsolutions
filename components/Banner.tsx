@@ -108,9 +108,9 @@ const Banner: React.FC<{}> = () => {
   );
 
   return (
-    <div className="flex flex-row items-center justify-center px-20 mt-[150px] z-[20]">
-      <div className="flex flex-col justify-center text-center">
-        <div className="justify-center flex ">
+    <div className="flex flex-col items-center justify-center px-20 mt-[150px] z-[20]">
+      <div className="flex flex-col items-center text-center">
+        <div className="flex justify-center items-center">
           <Image
             priority
             src="/Me.png"
@@ -120,26 +120,35 @@ const Banner: React.FC<{}> = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6 cursor-pointer animate-bounce tracking-tighter text-4xl sm:text-6xl md:text-7xl font-semibold text-white max-w-full sm:max-w-[600px] w-auto h-auto">
+        {/* Ensure the name is centered regardless of other elements */}
+        <div className="mt-4 sm:mt-6 cursor-pointer animate-bounce tracking-tighter text-4xl sm:text-6xl md:text-7xl font-semibold text-white max-w-full w-auto h-auto">
           Nate Walchenbach
         </div>
 
-        {/* Separate container for rotating text, with added CSS classes for text overflow management */}
-        <div className="text-2xl font-medium tracking-tighter text-gray-300 max-w-[600px] mb-3 sm:mb-5 single-line">
+        {/* Adjusted container for rotating text with a fixed height to prevent layout shifts */}
+        <div
+          className="text-2xl font-medium tracking-tighter text-gray-300 mb-3 sm:mb-5 single-line"
+          style={{ height: "64px" }}
+        >
           I am a{" "}
           <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 nowrap">
             {rotatingText}
           </span>
         </div>
-        {/* Static paragraph container */}
-        <div className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 max-w-full sm:max-w-[600px]">
+
+        {/* Expanded static paragraph container */}
+        <div className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 w-full">
           <p>
             As a fervent Software Developer specializing in Web Applications and
             connecting new technologies, I am committed to propelling industries
             forward by leveraging innovative technologies and development
             strategies. My passion lies in harnessing the power of web
             technologies to create transformative solutions that elevate
-            industry standards and drive progress.
+            industry standards and drive progress. Expanding my focus to include
+            emerging technologies and methodologies, I aim to continually
+            challenge and refine my skills to stay at the forefront of digital
+            innovation, driving meaningful change and delivering value to users
+            and stakeholders alike.
           </p>
         </div>
 
