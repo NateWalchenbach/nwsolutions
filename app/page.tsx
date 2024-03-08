@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import ProjectInquiryForm from "@/components/ProjectInquiryForm";
 import Projects from "@/components/Projects";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <Banner />
         <About />
         <Experience />
+        <ProjectInquiryForm />
         <Projects />
         <Footer />
       </div>
