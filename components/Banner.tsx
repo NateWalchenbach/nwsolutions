@@ -108,7 +108,7 @@ const Banner: React.FC<{}> = () => {
       "Independent Developer",
       "Contract Developer",
     ],
-    3000
+    1000
   );
 
   return (
@@ -124,7 +124,7 @@ const Banner: React.FC<{}> = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-6 mt-6 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
+        <div className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6 cursor-pointer animate-bounce tracking-tighter text-4xl sm:text-6xl md:text-7xl font-semibold text-white max-w-full sm:max-w-[600px] w-auto h-auto">
           Nate Walchenbach
         </div>
         <p className="text-2xl font-medium tracking-tighter text-gray-300 max-w-[600px]">
@@ -133,7 +133,7 @@ const Banner: React.FC<{}> = () => {
             {rotatingText}
           </span>
         </p>
-        <p className="text-md text-gray-200 my-5 max-w-[600px]">
+        <p className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 max-w-full sm:max-w-[600px]">
           As a fervent Software Developer specializing in Web Applications and
           connecting new technologies, I am committed to propelling industries
           forward by leveraging innovative technologies and development
@@ -141,6 +141,7 @@ const Banner: React.FC<{}> = () => {
           technologies to create transformative solutions that elevate industry
           standards and drive progress.
         </p>
+
         <div className="text-md flex justify-center">
           <button
             onClick={() => window.open("mailto:nate@nwsolutions.io")}

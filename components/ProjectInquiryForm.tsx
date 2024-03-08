@@ -1,8 +1,9 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { sendForm } from "@emailjs/browser";
 
 function ProjectInquiryForm() {
+  const form: any = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,50 +35,67 @@ function ProjectInquiryForm() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(formData);
-    // Ideally, here you would send the data to a server or some other form handling service
+
+    sendForm(
+      "service_sw3cp2d",
+      "template_ix6s99a",
+      form.current,
+      "t6TeNeADJegHTc6gK"
+    ).then(
+      () => {
+        alert("Your message has been sent successfully!");
+      },
+      (error) => {
+        console.error("FAILED...", error.text);
+        alert("Failed to send the message, please try again.");
+      }
+    );
   };
 
   return (
     <form
+      ref={form}
       onSubmit={handleSubmit}
       className="space-y-4 max-w-4xl mx-auto p-5"
       style={{ zIndex: 2 }}
     >
       <h2 className="text-white font-semibold text-3xl text-center pt-5">
-        Contact Information
+        Project Submittal
       </h2>
       <div className="flex flex-col space-y-3">
         <label className="block text-gray-300">
-          Name:
+          * Name:
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
             className="mt-1 block w-full rounded-md bg-gray-800 border-transparent focus:border-purple-500 focus:ring-0 text-white"
+            required
           />
         </label>
 
         <label className="block text-gray-300">
-          Email Address:
+          * Email Address:
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             className="mt-1 block w-full rounded-md bg-gray-800 border-transparent focus:border-purple-500 focus:ring-0 text-white"
+            required
           />
         </label>
 
         <label className="block text-gray-300">
-          Phone Number:
+          * Phone Number:
           <input
             type="text"
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
             className="mt-1 block w-full rounded-md bg-gray-800 border-transparent focus:border-purple-500 focus:ring-0 text-white"
+            required
           />
         </label>
 
@@ -167,18 +185,7 @@ function ProjectInquiryForm() {
         </label>
 
         <label className="block text-gray-300">
-          Color Schemes:
-          <input
-            type="text"
-            name="colorSchemes"
-            value={formData.colorSchemes}
-            onChange={handleChange}
-            className="mt-1 block w-full rounded-md bg-gray-800 border-transparent focus:border-purple-500 focus:ring-0 text-white"
-          />
-        </label>
-
-        <label className="block text-gray-300">
-          Website Examples:
+          Website Examples (if any):
           <input
             type="text"
             name="websiteExamples"
@@ -200,20 +207,6 @@ function ProjectInquiryForm() {
             <option value="all">Providing all content</option>
             <option value="partial">Need assistance with content</option>
             <option value="none">No content available</option>
-          </select>
-        </label>
-
-        <label className="block text-gray-300">
-          Logo and Branding:
-          <select
-            name="logoAndBranding"
-            value={formData.logoAndBranding}
-            onChange={handleChange}
-            className="mt-1 block w-full rounded-md bg-gray-800 border-transparent focus:border-purple-500 focus:ring-0 text-white"
-          >
-            <option value="">Please select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
           </select>
         </label>
 
