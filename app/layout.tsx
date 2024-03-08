@@ -7,9 +7,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://developer-portfolio-ibrahim-memons-projects.vercel.app"
-  ),
+  metadataBase: new URL("https://nwsolutions.io"),
   title: "NWSolutions",
   description: "Developer Portfolio By Nate Walchenbach",
   keywords: [
@@ -27,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nate Walchenbach",
     description: "Software Developer",
-    images: "/OpenGraph.jpg",
+    images: "/OpenGraph.png",
   },
 };
 
