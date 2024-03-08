@@ -30,8 +30,6 @@ const Banner: React.FC<{}> = () => {
       "App Developer",
       "Web Architect",
       "Interface Designer",
-      "User Experience Designer",
-      "User Interface Designer",
       "Graphic Designer",
       "Visual Designer",
       "Interaction Designer",
@@ -60,7 +58,6 @@ const Banner: React.FC<{}> = () => {
       "Site Developer",
       "E-commerce Developer",
       "Data Engineer",
-      "Machine Learning Engineer",
       "AI Developer",
       "VR Developer",
       "AR Developer",
@@ -82,7 +79,6 @@ const Banner: React.FC<{}> = () => {
       "Middleware Developer",
       "Performance Engineer",
       "Release Engineer",
-      "Version Control Specialist",
       "Software Strategist",
       "Technology Advisor",
       "Tech Advocate",
@@ -127,20 +123,25 @@ const Banner: React.FC<{}> = () => {
         <div className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6 cursor-pointer animate-bounce tracking-tighter text-4xl sm:text-6xl md:text-7xl font-semibold text-white max-w-full sm:max-w-[600px] w-auto h-auto">
           Nate Walchenbach
         </div>
-        <p className="text-2xl font-medium tracking-tighter text-gray-300 max-w-[600px]">
+
+        {/* Separate container for rotating text, with added CSS classes for text overflow management */}
+        <div className="text-2xl font-medium tracking-tighter text-gray-300 max-w-[600px] mb-3 sm:mb-5 single-line">
           I am a{" "}
-          <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
+          <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400 nowrap">
             {rotatingText}
           </span>
-        </p>
-        <p className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 max-w-full sm:max-w-[600px]">
-          As a fervent Software Developer specializing in Web Applications and
-          connecting new technologies, I am committed to propelling industries
-          forward by leveraging innovative technologies and development
-          strategies. My passion lies in harnessing the power of web
-          technologies to create transformative solutions that elevate industry
-          standards and drive progress.
-        </p>
+        </div>
+        {/* Static paragraph container */}
+        <div className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 max-w-full sm:max-w-[600px]">
+          <p>
+            As a fervent Software Developer specializing in Web Applications and
+            connecting new technologies, I am committed to propelling industries
+            forward by leveraging innovative technologies and development
+            strategies. My passion lies in harnessing the power of web
+            technologies to create transformative solutions that elevate
+            industry standards and drive progress.
+          </p>
+        </div>
 
         <div className="text-md flex justify-center">
           <button
