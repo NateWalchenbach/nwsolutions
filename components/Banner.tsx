@@ -137,7 +137,7 @@ const Banner: React.FC<{}> = () => {
         </div>
 
         {/* Expanded static paragraph container */}
-        <div className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 w-full">
+        <div className="text-base sm:text-md text-gray-200 my-3 sm:my-5 mx-4 sm:mx-0 w-full lg:max-w-4xl xl:max-w-3xl 2xl:max-w-2xl">
           <p>
             As a fervent Software Developer specializing in Web Applications and
             connecting new technologies, I am committed to propelling industries

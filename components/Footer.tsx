@@ -18,8 +18,8 @@ const Footer: React.FC<{}> = () => {
             >
               <Image
                 src={social.image}
-                height={30}
-                width={30}
+                height={40}
+                width={40}
                 className="mx-5"
                 alt={social.alt}
               />
