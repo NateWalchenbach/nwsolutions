@@ -1,4 +1,13 @@
 import React from "react";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  SiAstro,
+  SiCplusplus,
+  SiJavascript,
+  SiNextdotjs,
+  SiPython,
+  SiTypescript,
+} from "react-icons/si";
 
 const Experience: React.FC<{}> = () => {
   return (
@@ -6,9 +15,7 @@ const Experience: React.FC<{}> = () => {
       <h1 className="text-white font-semibold text-center text-6xl   pt-[35px]">
         EXPERIENCE
       </h1>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        EXPLORE NOW
-      </p>
+
       <div className=" container mx-auto 2xl ">
         <div className="flex  flex-row justify-between pt-5">
           <p className="text-gray-300 ">
@@ -17,42 +24,33 @@ const Experience: React.FC<{}> = () => {
           <p className="text-gray-300">MAY 2021 - PRESENT</p>
         </div>
         <p className="text-gray-300 pt-5">
-          My mission is to empower organizations worldwide with innovative tech
-          solutions. As a seasoned software developer with over 3.5 years of
-          experience, I specialize in crafting dynamic and responsive web and
-          mobile applications and technologies, tailoring each project to meet
-          the unique needs of our clients. My dedication to excellence and
-          innovation is the cornerstone of success, making technology accessible
-          where it's most needed.
-          <br />
-          <br />
-          My experience with Web Development has allowed me to develop
-          cross-platform mobile applications that run seamlessly on iOS, Android
-          and Windows. Additionally, my proficiency in React.js has equipped me
-          with the skills to create fast, scalable, and dynamic web pages with
-          excellent user experiences. I have a deep understanding of
-          component-based architecture and state management, and I am
-          well-versed in the latest web development trends and technologies.
+          Empowering organizations with innovative tech solutions, specializing
+          in web and mobile app development. Focused on creating user-centric
+          designs and enhancing client engagement through state-of-the-art
+          technologies.
         </p>
-        <div className="flex-col flex sm:flex-row ">
-          <div className="bg-transparent  mt-5 mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            Next.JS
-          </div>
-          <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React.JS
-          </div>
-          <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            JavaScript
-          </div>
-          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            Typescript
-          </div>
-          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            Node
-          </div>
-          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            Astro
-          </div>
+        <div className="flex flex-wrap gap-2 mt-4">
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <FaReact /> React.js
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <SiNextdotjs /> Next.js
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <SiJavascript /> JavaScript
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <SiTypescript /> TypeScript
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <FaNodeJs /> Node.js
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <SiCplusplus /> C++
+          </span>
+          <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
+            <SiPython /> Python
+          </span>
         </div>
       </div>
     </section>
