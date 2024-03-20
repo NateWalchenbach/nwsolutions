@@ -25,9 +25,9 @@ const Experience: React.FC<{}> = () => {
         </div>
         <p className="text-gray-300 pt-5">
           Empowering organizations with innovative tech solutions, specializing
-          in web and mobile app development. Focused on creating user-centric
-          designs and enhancing client engagement through state-of-the-art
-          technologies.
+          in api, desktop, web and mobile development. Focused on creating
+          user-centric UI/UX and enhancing client engagement through
+          state-of-the-art technologies.
         </p>
         <div className="flex flex-wrap gap-2 mt-4">
           <span className="flex items-center gap-2 bg-transparent cursor-pointer rounded-xl text-white py-1 px-3 border border-gray-700">
